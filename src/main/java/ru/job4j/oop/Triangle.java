@@ -2,8 +2,11 @@ package ru.job4j.oop;
 
 public class Triangle {
     private Point first;
+
     private Point second;
+
     private Point third;
+
 
     public Triangle(Point ap, Point bp, Point cp) {
         this.first = ap;
@@ -27,7 +30,6 @@ public class Triangle {
         double bc = second.distance(third);
         double p = period(ab, ac, bc);
         if (this.exist(ab, ac, bc)) {
-            /* написать формулу для расчета площади треугольника. */
             rsl = Math.sqrt(p * (p - ab) * (p - ac) * (p - bc));
         }
         return rsl;
