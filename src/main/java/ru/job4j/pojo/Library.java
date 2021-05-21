@@ -11,8 +11,7 @@ public class Library {
         book[1] = witcher;
         book[2] = schildt;
         book[3] = cleancode;
-        for (int index = 0; index < book.length; index++) {
-            Book bo = book[index];
+        for (Book bo : book) {
             System.out.println(bo.getName() + " - " + bo.getPages());
         }
 
@@ -20,15 +19,13 @@ public class Library {
         Book temp = book[0];
         book[0] = book[3];
         book[3] = temp;
-        for (int index = 0; index < book.length; index++) {
-            Book bo = book[index];
+        for (Book bo : book) {
             System.out.println(bo.getName() + " - " + bo.getPages());
         }
 
         System.out.println("Show only Clean code:");
-        for(int index = 0; index < book.length; index++) {
-            Book bo = book[index];
-            if (book[index].equals(cleancode)) {
+        for (Book bo : book) {
+            if (bo.getName().equals("Clean Code")) {
                 System.out.println(bo.getName() + " - " + bo.getPages());
             }
         }
