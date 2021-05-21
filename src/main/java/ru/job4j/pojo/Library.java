@@ -15,6 +15,7 @@ public class Library {
             Book bo = book[index];
             System.out.println(bo.getName() + " - " + bo.getPages());
         }
+
         System.out.println("Replacement:");
         Book temp = book[0];
         book[0] = book[3];
@@ -23,6 +24,7 @@ public class Library {
             Book bo = book[index];
             System.out.println(bo.getName() + " - " + bo.getPages());
         }
+
         System.out.println("Show only Clean code:");
         for(int index = 0; index < book.length; index++) {
             Book bo = book[index];
